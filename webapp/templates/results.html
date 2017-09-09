@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>Sie haben die folgenden Daten übegeben:</p>
+<table>
+    <tr>
+        <td>Phrase:</td>
+        <td>{{ the_phrase }}</td>
+    </tr>
+    <tr>
+        <td>Buchstaben:</td>
+        <td>{{ the_letters }}</td>
+    </tr>
+</table>
+
+<p>Die Suche in "{{the_phrase }}" nach "{{ the_letters }}" ergab folgendes Ergebnis:</p>
+<h3>{{ the_results }}</h3>
+<p>Die Miete pro qm bei einer Kaltmiete von {{ the_kaltmiete }} und einer Quadratmeterzahl von {{ the_qm }}</p>
+<h3>{{ the_miete_je_qm }}</h3>
+
+{% endblock %}

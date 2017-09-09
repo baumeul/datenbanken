@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/oraconnect'>
+    <table>
+        <p>Verwenden Sie diese Formular für die Suchanfrage:</p>
+        <tr>
+            <td>Username:</td>
+            <td><input name='username' type='TEXT' width='60'></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input name='password' type='TEXT' width='60'></td>
+        </tr>
+        <tr>
+            <td>Server:</td>
+            <td><input name='server' type="TEXT" value='vb08:1521/xe'></td>
+        </tr>
+    </table>
+    <p>Wenn Sie fertig sind, klicken Sie diesen Button:</p>
+    <p><input value="Los geht's!" type='SUBMIT'></p>
+</form>
+
+{% endblock %}
