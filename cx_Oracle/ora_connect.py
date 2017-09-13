@@ -1,4 +1,12 @@
 import cx_Oracle
 
-db = cx_Oracle.connect('system', 'Baumeul#3270', 'vb08:1521/xe')
+
+# netcup
+db = cx_Oracle.connect('immo', 'Baumeul#3270', 'netcup:1521/xe')
 print(db.version)
+
+# ovh
+db = cx_Oracle.connect('immo', 'Baumeul#3270', 'ovh:1521/xe')
+print(db.version)
+
+
